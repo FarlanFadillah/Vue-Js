@@ -12,8 +12,16 @@ const data = {
     href    : "https://www.youtube.com"
 }
 
-const notif = function() {
-    console.info("Hello");
+function sayHello() {
+    alert("Hello");
+}
+function say(word){
+    alert(word);
+}
+const items = {
+    Home : "Home Button",
+    Messages : "Messages Button",
+    About : "About Button"
 }
 
 </script>
@@ -26,9 +34,14 @@ const notif = function() {
     <h1 :class ="classHallo" :id >{{ hallo.toUpperCase() }}</h1>
     <div :class="classHallo" v-html="hallo"></div>
 
-    <button v-on:click="notif" :disabled="buttonDis" >Click This</button>
+    <button @click="sayHello" :disabled="buttonDis" >Click This</button>
     <br>
     <a  v-bind="data">{{ data["text"] }}</a>
+
+    <div v-for="(value, key, index) in items">
+        <p>{{ index }}</p>
+        <button v-on:click="say(value)">{{ key }}</button>
+    </div>
 
 </template>
 
@@ -55,5 +68,11 @@ p{
 
 .red {
     color : orange
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border-color: gray;
 }
 </style>
