@@ -22,6 +22,8 @@ const app = createApp(
 
 <template>
 <h1>{{ msg }}</h1>
+<a href="counter">counter</a>
+
 <div id="buttons">
     <button @click="showButton = !showButton">Show Button</button>
     <br>

@@ -12,8 +12,8 @@ import Test from './components/Test.vue'
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <Test msg="<button href>Click Me</button>"/>
   <HelloWorld msg="Vite + Vue" />
+  <Test msg="<button href>Click Me</button>"/>
 </template>
 
 <style scoped>

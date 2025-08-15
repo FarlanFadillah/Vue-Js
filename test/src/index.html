@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="app">
+        <button v-on:click = "show = !show" >{{msg}}</button>
+        <button v-on:click="alert('Hello');" v-if="show">Show Button</button>
+        <form>
+            <input type="text" name="tulisan" v-model="isi_text">
+            <input type="password" name="password" v-model="isi_password">
+        </form>
+        <p>Text : {{isi_text}}</p>
+        <p>Pass : {{isi_password}}</p>
+    </div>
+    <script src="vue.js"></script>
+    <script src="apps.js"></script>
+
+</body>
+</html>
