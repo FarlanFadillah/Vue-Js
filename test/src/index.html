@@ -8,13 +8,24 @@
     
     <div id="app">
         <button v-on:click = "show = !show" >{{msg}}</button>
-        <button v-on:click="alert('Hello');" v-if="show">Show Button</button>
+        <button v-on:click="sayHello" v-if="show">Show Button</button>
         <form>
             <input type="text" name="tulisan" v-model="isi_text">
             <input type="password" name="password" v-model="isi_password">
         </form>
         <p>Text : {{isi_text}}</p>
         <p>Pass : {{isi_password}}</p>
+        <a href="">aa</a>
+    </div>
+
+    <div id="app2">
+
+        <form>
+            <input type="password" v-model="text">
+            <p >Text : {{text}}</p>
+        </form>
+        <button v-on:click="say(text)">SAY</button>
+        <button v-on:click="sayHello">SAY HELLO</button>
     </div>
     <script src="vue.js"></script>
     <script src="apps.js"></script>
