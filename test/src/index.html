@@ -21,11 +21,11 @@
     <div id="app2">
 
         <form>
-            <input type="password" v-model="text">
-            <p >Text : {{text}}</p>
+            <input type="number" v-model.number="x">
+            <input type="number" v-model.number="y">
+            <p>Calc : {{x}} + {{y}} = {{Sum(x,y)}}</p>
         </form>
-        <button v-on:click="say(text)">SAY</button>
-        <button v-on:click="sayHello">SAY HELLO</button>
+        <button v-on:click="">Result</button>
     </div>
     <script src="vue.js"></script>
     <script src="apps.js"></script>

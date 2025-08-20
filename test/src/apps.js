@@ -1,4 +1,11 @@
 
+const H = function (){
+    alert("Hello asdf")
+}
+const sum = function(x, y){
+    return x + y;
+}
+
 var v = new Vue({
     el : '#app',
     data : {
@@ -9,9 +16,8 @@ var v = new Vue({
         isi_password : ''
     },
     methods : {
-        sayHello : function() {
-            alert("Hello");
-        }
+        sayHello : H
+        
     }
 })
 
@@ -19,7 +25,10 @@ var w = new Vue({
     el: "#app2",
     data : {
         title : "Hello",
-        text : ''
+        text : '',
+        x : 0,
+        y : 0,
+        z : 0
     },
     methods : {
         say : function(params){
@@ -27,6 +36,9 @@ var w = new Vue({
         },
         sayHello : function(){
             alert("Hello");
+        },
+        Sum : function(params1, params2){
+            return params1 + params2;
         }
     }
 })
