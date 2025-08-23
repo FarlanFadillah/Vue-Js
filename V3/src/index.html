@@ -14,9 +14,19 @@
 
 
         <form>
+            <select name="Op" id="OP" v-model="op_val">
+                <option value="0">Tambah</option>
+                <option value="1">Kurang</option>
+                <option value="2">Kali</option>
+                <option value="3">Bagi</option>
+            </select>
+            <br>
             <input type="number" v-model.number="x">
             <input type="number" v-model.number="y">
-            <p>Result : {{x}} + {{y}} = {{sum(x, y)}}</p>
+            <p v-if="op_val == 0">Result : {{x}} {{op[op_val]}} {{y}} = {{sum(x, y)}}</p>
+            <p v-else-if="op_val == 1">Result : {{x}} {{op[op_val]}} {{y}} = {{sub(x, y)}}</p>
+            <p v-else-if="op_val == 2">Result : {{x}} {{op[op_val]}} {{y}} = {{times(x, y)}}</p>
+            <p v-else>Result : {{x}} {{op[op_val]}} {{y}} = {{div(x, y)}}</p>
         </form>
     </div>
 

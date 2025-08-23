@@ -4,6 +4,8 @@ const app = Vue.createApp({
             message: "Hello World!",
             x : 0,
             y : 0,
+            op : ['+', '-', 'x', '/'],
+            op_val : 0
         }
     }, 
     methods : {
@@ -12,7 +14,15 @@ const app = Vue.createApp({
         },
         sum(x, y){
             return x + y;
+        },
+        sub(x, y){
+            return x - y;
+        },
+        times(x, y){
+            return x * y;
+        },
+        div(x, y){
+            return x/y;
         }
     }
-})
-app.mount("#app");
+}).mount("#app");
