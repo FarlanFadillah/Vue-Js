@@ -1,6 +1,6 @@
 <script setup>
 
-const openMoreMenu = function () {
+function openMoreMenu() {
     document.querySelector('.popup').style.display = 'flex'
     document.querySelector('.more-menu-card').style.display = 'flex'
 
@@ -72,7 +72,7 @@ function closePopUp(params) {
                 <li class="disable-btn"><a><span>Switch apparance</span> <i class="fa-sharp fa-regular fa-moon"></i></a></li>
                 <li class="disable-btn"><a><span>Report a problem</span> <i class="fa-solid fa-circle-exclamation"></i></a></li>
                 <li><a><span>Switch accounts</span></a></li>
-                <li><a><span>Log out</span></a></li>
+                <li><a href="login"><span>Log out</span></a></li>
             </ul>
         </div>
     </div>
