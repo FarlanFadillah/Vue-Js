@@ -1,4 +1,7 @@
-<script setup></script>
+<script setup>
+
+
+</script>
 
 <template>
 
@@ -120,6 +123,7 @@
       <div class="section-one">
         <div class="profile-img">
           <img src="../assets/profile/default.jpg" alt="">
+          <input type="checkbox" v-model="Login">
         </div>
         <div class="profile-name">
           <a href="">Farlan Fadillah
@@ -154,7 +158,7 @@
       </div>
       <div class="section-four">
         <a class="like-count-home a_content_id">10 likes</a>
-        <p><b>Farlan Fadillah </b> fuck this shit</p>
+        <p><b>Farlan Fadillah </b> this is where caption goes</p>
         <a onclick="openContent('#content_user_content_id')">View all 100 comments</a>
           <input data-content="content_id" id="text-comment_content_id" class='text-comment' type="text"
             placeholder="Add a comment...">

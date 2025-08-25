@@ -38,7 +38,7 @@
                             People who use our service may have uploaded your contact information to Instagram.
                             <span>Learn More</span>
                         </p>
-                        <p>By signing up, you agree to our <span>Terms</span> ,<span>Privacy Policy</span> and
+                        <p>By signing up, you agree to our <span>Terms</span>, <span>Privacy Policy</span> and
                             <span>Cookies Policy</span> .
 
                         </p>
